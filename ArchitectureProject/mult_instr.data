@@ -1,0 +1,67 @@
+00000000 //00 	NOP to Start
+88100001 //01	Set R1 = 1 //CHANGE ME LATER
+
+10200000 //02	Load M[0] with R2 MULTIPICAND
+10300001 //03	Load M[1] with R3 MULTIPLIER
+
+//Check Signs of R2 (Use R5 as a temp register)
+80001002 //04
+80502002 //05	Repeat with register 2
+52000003 //06	Skip ahead if positive
+
+//Otherwise convert to positive
+80220004 //07	Take Twos Compliment
+80221001 //08	Takes Twos Compliment
+80660004 //09	Negate reg 6
+
+80503002 //0A	Repeat with register 3
+52000003 //0B	Skip ahead if positive
+80330004 //0C	Take Twos Compliment
+80331001 //0D	Takes Twos Compliment
+80660004 //0E	negate reg 6
+
+//if reg 6 is negative, result is negative - 
+//if reg 6 is positive, result is positive - DO AT END
+
+80903001 //10	Put multiplier in LSB
+
+80B10001 //11	Set some shifting values
+80B11008 //12	Make MSB 1
+
+88500020 //13	Use register 5 to store the loop
+
+80A91006 //14	Test LSB of register 9. if it is one, add multiplicand to MSB
+51000001 //15	Skip ahead one line if it is zero
+80882001 //16	Add multiplicand      
+
+8099100A //17	Shift LSB right one bit
+
+80A81006 //18	Test lsb of 8 
+51000001 //19
+8099B001 //1A	Add 1 at MSB position of LSB register
+
+
+8088100A //1B	Shift MSB right one bit
+
+
+80551002 //1C	Decrement R5
+61000013 //1D	Branch if not equal to just after the loop
+
+//Make negative if necessary
+80A06002 //1E  
+51000007 //1F	Skip to End if zero
+
+80990004 //20	Take twos complement of 9
+80991001 //21	Take two complement of 9
+
+54000002 //22	Check for overflow
+
+80880004 //23	Negate
+50000002 //24	Branch over
+
+80880004 //25	Invert
+80881001 //26	Add one	
+
+20800002 //22	Store R8 (MSB) into M[2] 
+20900003 //	Store R9 (LSB) into M[3]
+F0000000 //	HALT

@@ -1,0 +1,37 @@
+00000000 //00 	NOP to Start
+88100001 //01	Set R1 = 1
+10200000 //02	Load N into R2 (N is stored in memory location 0)
+80621002 //03 Load N-1 into R6
+80760001 //04 Load r6 into r7
+
+88300001 //05	L1: R3 <- 1
+
+
+18430000 //06	L2: Load R4 with memory location at R3
+18530001 //07	Load R5 with memory location one above
+
+80840001 //07	Set R8 to R4
+
+
+
+80885002 //08	r8 <- r8 - r5
+53000003 //09	if r4 < r5, branch to end
+
+30454000 //0A	SWAP
+
+28430000 //0B	Store r4 in memory
+28530001 //0C	Store r5 in memory
+
+
+80331001 //0D	R3 <- R3 + 1	
+
+
+
+80771002 //0G	Decrement R7. //Inner Loop
+61000006 //10	Branch if not equal to zero to L1
+
+
+80221002 //0G	Decrement R2. //Outer Loop
+61000004 //10	Branch if not equal to zero to L1
+F0000000 //11	HALT
+

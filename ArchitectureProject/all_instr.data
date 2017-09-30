@@ -1,0 +1,58 @@
+// ECE:3350 sisc processor project
+// This program tests arithmetic instructions from Part 1.
+// These are the same instructions in sisc_tb_p1.v
+//
+
+00000000 //00: NOP
+88100001 //01: ADDI R1 <- R0 + (0x0000)0001
+80211001 //02: ADD  R2 <- R1 + R1
+8032200B //03: SHFL R3 <- R2 << [R2]
+80412002 //04: SUB  R4 <- R1 - R2
+8044300A //05: SHFR R4 <- R4 >> [R3]
+80234007 //06: XOR  R2 <- R3 ^ R4
+80220004 //07: NOT  R2 <- ~R2
+80421009 //08: ROTL R4 <- R2 <.< [R1]
+80524005 //09: OR   R5 <- R2 | R4
+80324006 //0A: AND  R3 <- R2 & R4
+88100001 //0B: ADD  R1 <- R0 + (0x0000)0001 (STAT: 0000)
+80211002 //0C: SUB  R2 <- R1 - R1           (STAT: 0001)
+80201002 //0D: SUB  R2 <- R0 - R1           (STAT: 1010)
+80311008 //0E: ROTR R3 <- R1 >> [R1]
+80423001 //0F: ADD  R4 <- R2 + R3           (STAT: 1100)
+
+// ECE:3350 sisc processor project
+// This program tests branch instructions with two nested loops
+//
+
+00000000 //10: NOP
+80400001 //11: ADD  R4 <- R0 + R1                       Clear R4
+88100001 //12: ADD  R1 <- R0 + 0x(0000)0001             Set R1 = 1
+88200004 //13: ADD  R2 <- R0 + 0x(0000)0004             Set R2 = 4
+80221002 //14: SUB  R2 <- R2 - R1                   L1  Decrement R2
+53000005 //15: BRR  PC <- (PC+1) + 0x0005               If R2 < 0, branch to end
+88320000 //16: ADD  R3 <- R2 + 0x(0000)0000             Set R3 = R2
+88440001 //17: ADD  R4 <- R4 + 0x(0000)0001         L2  Increment R4
+80331002 //18: SUB  R3 <- R3 - R1                       Decrement R3
+61000017 //19: BNE  PC <- 0x0016 if [R3]!=0             If R3 != 0, branch to L2
+40000014 //20: BRA  PC <- 0x0013 (unconditional)        Branch to L1
+
+//This portion tests the load, swap, and store instructions
+18100001 //LOD(idx) R1 <- Mem[R0 + 0x0001]
+10200002 //LOD(abs) R2 <- Mem[0x0002]
+30121000 //SWAP R1 <- R2, R2 <- R1
+28300001 //STR(idx) Mem[R0 + 0x0001] <- R3 ????
+20400002 //STR(abs) Mem[0x0002] <- R4 ????
+
+//This portion tests the part 4 instructions 
+18100001 //LDX R1 <- MEM[R0 + 1]
+10200002 //LDA R2 <- MEM[2]
+19320001 //LDP R3 <- MEM[R2 + 1], R2 <- R2 + 1
+11430001 //LDI R4 <- MEM[R3], R3 <- R3 + 1
+28100001 //STX MEM[R0+ 1] <- R1
+20400004 //STA MEM[4] <- R4
+29210001 // STP MEM[R1 + 1] <- R2, R1 <- R1 + 1
+21420004 //STI MEM[R2] <-R4, R2 <- RS + 4
+
+F0000000 //21: HALT                                     Halt program
+
+

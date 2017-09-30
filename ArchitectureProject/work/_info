@@ -1,0 +1,347 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/ArchitectureProject
+valu
+Z0 !s110 1493942878
+!i10b 1
+!s100 HEGI3c27;Q7NzG`g84g6S3
+I1oo0Ro;`UGENn7MG]J7cY0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/PartThree/ArchitectureProject
+Z3 w1493040742
+8C:/PartThree/ArchitectureProject/alu.v
+FC:/PartThree/ArchitectureProject/alu.v
+L0 6
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1493942878.000000
+!s107 C:/PartThree/ArchitectureProject/alu.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/alu.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vbr
+R0
+!i10b 1
+!s100 kW=jDhJAFZ;JodM_=1mA_0
+I_C_Y>:WeT:XL]XmWa=4EE3
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/br.v
+FC:/PartThree/ArchitectureProject/br.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/PartThree/ArchitectureProject/br.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/br.v|
+!i113 1
+R6
+R7
+vctrl
+!s110 1493948262
+!i10b 1
+!s100 PECZkE9A2W`bW4d<GT=V@1
+IEiOSSBJgXVViz;FGd:ZDe1
+R1
+R2
+w1493948257
+8C:/PartThree/ArchitectureProject/ctrl.v
+FC:/PartThree/ArchitectureProject/ctrl.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1493948262.000000
+!s107 C:/PartThree/ArchitectureProject/ctrl.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/ctrl.v|
+!i113 1
+R6
+R7
+vdm
+R0
+!i10b 1
+!s100 QP:U<l^DoiLB8RFMk0dIT3
+I?9<[X7QnM3<eB>?5F=6E[3
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/dm.v
+FC:/PartThree/ArchitectureProject/dm.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/PartThree/ArchitectureProject/dm.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/dm.v|
+!i113 1
+R6
+R7
+vim
+R0
+!i10b 1
+!s100 <`WM1e7nS3PQAzSh]:Kzb0
+IUdn_0:<?e1jdclCD?MX=T0
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/im.v
+FC:/PartThree/ArchitectureProject/im.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/PartThree/ArchitectureProject/im.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/im.v|
+!i113 1
+R6
+R7
+vir
+R0
+!i10b 1
+!s100 l3Y9Jj382IDORE4aRhmV:3
+I8NJS4_c7=3aDj`8mNlkan3
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/ir.v
+FC:/PartThree/ArchitectureProject/ir.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/PartThree/ArchitectureProject/ir.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/ir.v|
+!i113 1
+R6
+R7
+vmux16
+!s110 1493943761
+!i10b 1
+!s100 _EFV@3[R3ooSzJQN2>N:J3
+I_k5P;IFn7jKIkJz`620Po3
+R1
+R2
+w1493942128
+8C:/PartThree/ArchitectureProject/mux16.v
+FC:/PartThree/ArchitectureProject/mux16.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1493943761.000000
+!s107 C:/PartThree/ArchitectureProject/mux16.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/mux16.v|
+!i113 1
+R6
+R7
+vmux32
+Z8 !s110 1493942879
+!i10b 1
+!s100 h8O[DSI:g@cK@YHz?=9;L3
+I6@6QfEOdZ4h`Amm0D9WdO2
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/mux32.v
+FC:/PartThree/ArchitectureProject/mux32.v
+L0 6
+R4
+r1
+!s85 0
+31
+Z9 !s108 1493942879.000000
+!s107 C:/PartThree/ArchitectureProject/mux32.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/mux32.v|
+!i113 1
+R6
+R7
+vmux32rf
+R8
+!i10b 1
+!s100 J=gLQEHR1o;d1zAF@_@690
+I6d;hESea5oV`n=B`iDM713
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/mux32rf.v
+FC:/PartThree/ArchitectureProject/mux32rf.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/mux32rf.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/mux32rf.v|
+!i113 1
+R6
+R7
+vmux4
+R8
+!i10b 1
+!s100 g7MLACQLXXP0:2aTC]eMj3
+I2;ob6D4fE@7Dk`a^BciCY3
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/mux4.v
+FC:/PartThree/ArchitectureProject/mux4.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/mux4.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/mux4.v|
+!i113 1
+R6
+R7
+vpc
+R8
+!i10b 1
+!s100 U3eg_cFbfj:75N0dC=hOj3
+IG`1:g;nH04o87N4ONc@7;2
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/pc.v
+FC:/PartThree/ArchitectureProject/pc.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/pc.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/pc.v|
+!i113 1
+R6
+R7
+vrf
+R8
+!i10b 1
+!s100 QI9PzLe8JN0TQ;o]gjNPg2
+I:SPWgneTgm9J`]F=5SoU31
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/rf.v
+FC:/PartThree/ArchitectureProject/rf.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/rf.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/rf.v|
+!i113 1
+R6
+R7
+vsisc
+!s110 1493943757
+!i10b 1
+!s100 WEBN1K>keVMEa5=iJc^>N2
+IkEbY22XESjElC16mjSbIX0
+R1
+R2
+w1493943724
+8C:/PartThree/ArchitectureProject/sisc.v
+FC:/PartThree/ArchitectureProject/sisc.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1493943757.000000
+!s107 C:/PartThree/ArchitectureProject/sisc.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/sisc.v|
+!i113 1
+R6
+R7
+vsisc_tb
+R8
+!i10b 1
+!s100 XJeQjmc9lBbBAOaQHdTH11
+IC:EJcSY7fWi9Wh6U8Rl>k0
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/sisc_tb_p3.v
+FC:/PartThree/ArchitectureProject/sisc_tb_p3.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/sisc_tb_p3.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/sisc_tb_p3.v|
+!i113 1
+R6
+R7
+vstatreg
+Z10 !s110 1493942880
+!i10b 1
+!s100 N8RNk@:0mCn87Q8FG?AQL3
+I7HS6of8DQ:3^LY9F[YDH50
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/statreg.v
+FC:/PartThree/ArchitectureProject/statreg.v
+L0 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/PartThree/ArchitectureProject/statreg.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/statreg.v|
+!i113 1
+R6
+R7
+vwriteRegMux
+R10
+!i10b 1
+!s100 R<WoK=koVWdTBb9IgELXU2
+IJRRW[Q<Z94YVSe=0`7ziJ0
+R1
+R2
+R3
+8C:/PartThree/ArchitectureProject/writeRegMux.v
+FC:/PartThree/ArchitectureProject/writeRegMux.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1493942880.000000
+!s107 C:/PartThree/ArchitectureProject/writeRegMux.v|
+!s90 -reportprogress|300|-work|work|C:/PartThree/ArchitectureProject/writeRegMux.v|
+!i113 1
+R6
+R7
+nwrite@reg@mux
